@@ -1,0 +1,35 @@
+@import './fonts';
+@import './variables.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100dvh;
+  background: $body-color-primary;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+
+  color: $text-color-primary;
+  font-family: 'Inter', 'Gilroy', 'Comfortaa', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+}
