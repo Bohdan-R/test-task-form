@@ -42,14 +42,12 @@ const LoginForm: React.FC = () => {
         label="Password"
         type={showPassword ? 'text' : 'password'}
         {...register('password')}
-        iconSrc={showPassword ? 'src/assets/icons/hide.svg' : 'src/assets/icons/show.svg'}
+        iconSrc={showPassword ? '/assets/icons/hide.svg' : '/assets/icons/show.svg'}
         autoComplete="off"
         error={errors.password?.message}
         onIconClick={() => setShowPassword(!showPassword)}
       />
-      <Button type="submit" className={styles['form-button']}>
-        {isSubmitting ? <Loader /> : 'Увійти'}
-      </Button>
+      <Button type="submit">{isSubmitting ? <Loader /> : 'Увійти'}</Button>
     </form>
   );
 };
